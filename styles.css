@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff6600; /* warna dominan orange */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* tambahan shadow untuk header */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.categories {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2 {
+    margin-top: 0;
+    color: #333; /* warna teks untuk kontras lebih baik */
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories ul li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc; /* Garis pembatas antara setiap kategori */
+    padding-bottom: 5px; /* Jarak antara teks dan garis */
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.categories ul li a:hover {
+    color: #ff6600; /* warna dominan orange */
+}
+
+.videos {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* membuat grid responsive */
+    gap: 20px;
+}
+
+.video-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* tambahan shadow untuk video-container */
+    transition: transform 0.3s ease; /* animasi transisi */
+    display: flex;
+    flex-direction: column; /* tata letak judul di bawah */
+}
+
+.video-container:hover {
+    transform: translateY(-5px); /* efek mengangkat sedikit saat hover */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 150px; /* tinggi video disesuaikan untuk tampilan yang lebih ramping */
+    border-radius: 8px;
+}
+
+.video-container h3 {
+    margin-top: 10px; /* jarak atas judul */
+    margin-bottom: 0; /* menghilangkan margin bawah yang berlebihan */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* garis pembatas untuk judul video */
+    color: #ff6600; /* warna dominan orange */
+    text-align: center; /* teks rata tengah */
+}
+
+.search-form {
+    display: flex;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #ff6600;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease; /* animasi transisi */
+}
+
+.search-form button:hover {
+    background-color: #e65c00;
+    border-color: #e65c00;
+}
